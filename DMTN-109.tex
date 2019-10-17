@@ -1,0 +1,61 @@
+\documentclass[DM,authoryear,toc]{/Users/eggl/Documents/UW2018/mpc/doc/lsst-texmf/texmf/tex/latex/lsst/lsstdoc}
+% lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
+
+% Package imports go here.
+%\usepackage{etoolbox}
+%\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+% Local commands go here.
+
+% To add a short-form title:
+% \title[Short title]{Title}
+\title{LSST Asteroid Discovery Rates}
+
+% Optional subtitle
+% \setDocSubtitle{A subtitle}
+
+\author{%
+Siegfried Eggl,  Lynne Jones, Mario Jurić
+}
+
+\setDocRef{DMTN-109}
+
+\date{\today}
+
+% Optional: name of the document's curator
+% \setDocCurator{The Curator of this Document}
+
+\setDocAbstract{%
+Updated asteroid discovery rates are presented.
+}
+
+% Change history defined here.
+% Order: oldest first.
+% Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
+% See LPM-51 for version number policy.
+\setDocChangeRecord{%
+  \addtohist{1}{2019-04-01}{Unreleased.}{Siegfried Eggl}
+}
+
+\begin{document}
+
+% Create the title page.
+% Table of contents is added automatically with the "toc" class option.
+
+\mkshorttitle
+%switch to \maketitle if you wan the title page and toc
+
+
+% ADD CONTENT HERE ... a file per section can be good for editing
+\input{body}
+
+\appendix
+% Include all the relevant bib files.
+% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+%\section{References} \label{sec:bib}
+\bibliography{lsst,lsst-dm,refs_ads,refs,books}
+
+%Make sure lsst-texmf/bin/generateAcronyms.py is in your path
+\section{Acronyms used in this document}\label{sec:acronyms}
+\input{acronyms.tex}
+\end{document}
