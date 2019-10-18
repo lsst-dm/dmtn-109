@@ -9,8 +9,14 @@ LSST Asteroid Discovery Rates
 
 DMTN-109
 --------
-
+**Abstract**
 Once operational, the LSST is bound to become the dominant contributor of Solar System object (SSO) observations and discoveries.
+Millions of asteroids are going to be observed on a regular basis leading to a yield of around two billion SSO observations after ten years of operations.
+Internal and external services that ingest and process LSST data on a regular basis, such as the IAU Minor Planet Center, 
+have a great interest in the predicted data flux directed their way. This DMTN provides updates on 
+LSST SSO observation and discovery rates as well as their uncertainties. Estimates on the number and distribution of SSO observations that can not be linked to
+known or newly discovered objects and may, thus, trigger unwanted alerts are being provided. 
+Likely data rates for daily submissions of SSO observations to the Minor Planet Center are discussed.
 
 To compile this document you need to have set up  lsst-texmf see  http:\\lsst-texmf.lsst.io . The bin directory of texmf must be in your path for generateAcronyms.py to be found and  work. 
 **Links**
