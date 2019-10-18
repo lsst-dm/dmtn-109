@@ -42,6 +42,7 @@
 \newglossaryentry{JPL} {name={JPL}, description={Jet Propulsion Laboratory (DE ephemerides)}}
 \newacronym{LSST} {LSST} {Large Synoptic Survey Telescope}
 \newglossaryentry{MB} {name={MB}, description={MegaByte}}
+\newacronym{MBA} {MBA} {Main Belt Asteroid}
 \newacronym{MOC} {MOC} {Multi Ordered Catalogue}
 \newacronym{MOPS} {MOPS} {Moving Object Processing System}
 \newglossaryentry{MPC} {name={MPC}, description={IAU Minor Planet Center}}

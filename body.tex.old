@@ -92,7 +92,7 @@ Two types of survey simulation software frameworks were used to generate and val
 \item \href{https://github.com/eggls6/openobs}{Open Observation Simulator (OPENOBS)}
 \end{itemize}
 The former is a high fidelity simulator that includes N-body numerical orbit propagation, the actual \gls{LSST} \gls{camera} model, as well as color information of asteroids. SIMS\_MO is capable of performing accurate observation simulations for up to several 100k of SSOs. Although that constitutes only a fraction of the true MBA population, information on expected survey completeness statistics can be extracted through sampling of individual orbits over a grid of absolute magnitudes. 
-OPENOBS is capable of performing survey simulations on the entire expected MBA population (around 100M objects) albeit with a lower fidelity. Instead of N-body propagation unperturbed heliocentric Keplerian orbits of SSOs are assumed. The \gls{LSST} \gls{camera} \gls{footprint} is simulated, but the exact geometry including chip gaps has not been taken into account in OPENOBS simulations. Instead, the fill factor of the \gls{camera} system as calculated in \citet{veres2017high} was used to statistically filter observations. Spectral energy distributions (SEDs) of asteroids are assumed to be flat in OPENOBS simulations, while S- and C-type asteroid \gls{SED}s are used in SIMS\_MO (Figure \ref{fig:sed}). The magnitude cutoff in our simulation was chosen to be H=25 mag corresponding to MBA diameters between 19m-60m depending on object albedo (0.5-0.05).
+OPENOBS is capable of performing survey simulations on the entire expected MBA population (around 100M objects) albeit with a lower fidelity. Instead of N-body propagation unperturbed heliocentric Keplerian orbits of SSOs are assumed. The \gls{LSST} \gls{camera} \gls{footprint} is simulated, but the exact geometry including chip gaps has not been taken into account in OPENOBS simulations. Instead, the fill factor of the \gls{camera} system as calculated in \citet{veres2017high} was used to statistically filter observations. Spectral energy distributions (SEDs) of asteroids are assumed to be flat in OPENOBS simulations, while S- and C-type asteroid \gls{SED}s are used in SIMS\_MO (Figure \ref{fig:sed}). The magnitude cutoff in our simulation was chosen to be H=25 mag corresponding to asteroid diameters between 19m-60m depending on object albedo (0.5-0.05).
 \begin{figure}[tb!]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{figs/5sig_filter.png}\\
@@ -453,11 +453,11 @@ The two lines show results with visit pairs in the same filter vs. pairs in diff
 
 \section{Conclusions} \label{sec:conclusions}
 
-LSST is going to be the largest contributor of Solar System object observations and discoveries to be processed by the \gls{IAU} Minor Planet Center.
+LSST is going to be the largest contributor of Solar System object observations and discoveries to be processed by the \gls{IAU} Minor Planet \gls{Center}.
 The study at hand shows that
 \begin{itemize}
 \item \gls{LSST} is bound to discover between 49k-93k near-Earth asteroids (NEOs) depending on the actual size-frequency distribution.
-\item Observations and discoveries of Main belt asteroids (MBAs) are bound to dominate \gls{LSST} \gls{SSO} data submitted to the \gls{IAU} Minor Planet Center.
+\item Observations and discoveries of Main belt asteroids (MBAs) are bound to dominate \gls{LSST} \gls{SSO} data submitted to the \gls{IAU} Minor Planet \gls{Center}.
 \item The number of MBAs discovered over 10 years of \gls{LSST} likely ranges between 4.8M and 5.4M and is unlikely to be higher than 220M. 
 \item The majority of discoveries are going to be made within the first 2 to 3 years of the \gls{LSST} survey.
 \item The number of MBA discoveries per night can be up to 100 000 with an average of 2000 for the most likely size-frequency distribution (population model A). Even in the unlikely case of a \gls{TNO}-like size-frequency distribution in the Main Belt we expect no more than 3 million discoveries per night on a handful of nights during the survey.
