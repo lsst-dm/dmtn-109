@@ -17,7 +17,9 @@ have a great interest in the predicted data flux directed their way. This DMTN p
 LSST SSO observation and discovery rates as well as their uncertainties. Estimates on the number and distribution of SSO observations that can not be linked to
 known or newly discovered objects and may, thus, trigger unwanted alerts are being provided. 
 Likely data rates for daily submissions of SSO observations to the Minor Planet Center are discussed.
+
 ****
+
 To compile this document you need to have set up  lsst-texmf see  http:\\lsst-texmf.lsst.io . The bin directory of texmf must be in your path for generateAcronyms.py to be found and  work. 
 
 **Links**
