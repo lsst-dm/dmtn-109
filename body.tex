@@ -99,7 +99,7 @@ OPENOBS is capable of performing survey simulations on the entire expected \gls{
 \includegraphics[width=0.5\textwidth]{figs/5sig_filter_S.png}\\
 \includegraphics[width=0.5\textwidth]{figs/5sig_filter_C.png}
 \end{center}
-\caption{A comparison of \gls{LSST} depths per filter for a flat \gls{SED} (top), an \gls{SED} corrected for S-type asteroids (center) and C-type asteroids (bottom), respectively. The x-axis is given in magnitudes and the y axis }
+\caption{A comparison of \gls{LSST} depths per filter for a flat \gls{SED} (top), an \gls{SED} corrected for S-type asteroids (center) and C-type asteroids (bottom), respectively. The units of the x-axis are magnitudes. }
 \label{fig:sed}       % Give a unique label
 \end{figure}
 %Combining results from SSO population studies and LSST's expected performance we suggest that the  
@@ -150,10 +150,10 @@ In order to quantify the number of potential \gls{LSST} discoveries, we adopt a 
  N(\text{H})=\beta\;10^{\;\alpha \text{H}}
  \label{eq:lsw}
 \end{equation}
-where $N$ is the number of MBAs, $H$ the absolute magnitude, and $\alpha$ and $\beta$ determine the slope and the anchor value of the log-linear fit, respectively.
+where $N$ is the number of MBAs, H the absolute magnitude, and $\alpha$ and $\beta$ determine the slope and the anchor value of the log-linear fit, respectively.
 The parameters in equation (\ref{eq:lsw}) were derived from the current \gls{MBA} population using actual data of the main belt supplied by the \gls{MPC}. 
-Assuming the bright main belt population is essentially complete up to $H=14.5$mag, we can fit lower and upper bounds on the size-frequency distribution that we extrapolate to fainter objects. The corresponding results are presented in Figure \ref{fig:mba_pop} as well as in Table \ref{tab:mbapop}.
-In order to guarantee that the slope and anchor parameters for the \gls{MBA} population are not influenced by the specific choice of the bin-size in $H$ we derived the underlying distribution $n(H)$ using kernel density estimation where
+Assuming the bright main belt population is essentially complete up to H$=$14.5mag, we can fit lower and upper bounds on the size-frequency distribution that we extrapolate to fainter objects. The corresponding results are presented in Figure \ref{fig:mba_pop} as well as in Table \ref{tab:mbapop}.
+In order to guarantee that the slope and anchor parameters for the \gls{MBA} population are not influenced by the specific choice of the bin-size in H we derived the underlying distribution $n$(H) using kernel density estimation where
 \begin{equation}
  n\;(\text{H})=\frac{1}{I\,b} \sum_{i=1}^{I} K\left(\frac{\text{H}-\text{H}_i}{b}\right),
  \label{eggl:eq:kernel}
@@ -181,7 +181,7 @@ B & 0.56 &4.43 $\times 10^{-4}$ & 34.5$\times 10^{9}$\\
 \begin{center}
 \includegraphics[scale=.8]{figs/mpc_population_4.png}
 \end{center}
-\caption{MBA population extrapolation using a continuous (red, green) and broken $H(N)$ power law (orange), respectively.}
+\caption{MBA population extrapolation using a continuous (red, green) and broken H($N$) power law (orange), respectively.}
 \label{fig:mba_pop}       % Give a unique label
 \end{figure} 
 %
@@ -201,7 +201,7 @@ The graph shows that after two years of survey more than 90\% of kilometer sized
 By the nominal end of the \gls{LSST} survey we know essentially all MBAs with diameters of half a kilometer and larger.
 The total number of discovered MBAs as a function of absolute magnitude is presented in Figure \ref{fig:mba_disc}. Results for the two  size-frequency distributions probed are 
 shown for both software packages, SIMS\_MO and OPENOBS. Formal errors for SIMS\_MO discoveries are based on the sample size selected from the assumed size frequency distribution.  
-A comparison of Figures \ref{fig:mba_compl} and \ref{fig:mba_disc} shows that results for SIMS\_MO and OPENOBS are very similar where \gls{LSST} is expected to be essentially complete (H$\approx19$ mag). For smaller and fainter objects discovery rates differ slightly leading to a discrepancy of roughly 10\%, which is negligible compared to the uncertainties in the expected number of MBAs. 
+A comparison of Figures \ref{fig:mba_compl} and \ref{fig:mba_disc} shows that results for SIMS\_MO and OPENOBS are very similar where \gls{LSST} is expected to be essentially complete (H$\approx19$mag). For smaller and fainter objects discovery rates differ slightly leading to a discrepancy of roughly 10\%, which is negligible compared to the uncertainties in the expected number of MBAs. 
 %
 \begin{figure}[tb!]
 \begin{center}
@@ -211,7 +211,7 @@ A comparison of Figures \ref{fig:mba_compl} and \ref{fig:mba_disc} shows that re
 \label{fig:mba_disc}       % Give a unique label
 \end{figure}
 %
-Figure \ref{fig:mba_disc_stats} shows the expected number of \gls{LSST} \gls{MBA} discoveries per night as predicted by OPENOBS simulations. The number of discovered objects ranges from a few per night to 100 000 discoveries depending on the momentary cadence and ecliptic latitude. Figure \ref{fig:mba_disc_stats} provides statistical information on how many nights are expected to yield a certain number of discoveries. The conservative size-frequency distribution sees an average of 2000 discoveries per night\footnote{not observed night} during the ten year survey for more than 200 nights. Nights with more objects are rare but do occur. Discovery maxima of roughly 100 000 discoveries per night can occur. A steeper size-frequency distribution of MBAs (population model \gls{B}) would see nights with more than 10 million discoveries. 
+Figure \ref{fig:mba_disc_stats} shows the expected number of \gls{LSST} \gls{MBA} discoveries per night as predicted by OPENOBS simulations. The number of discovered objects ranges from a few per night to 100,000 discoveries depending on the momentary cadence and ecliptic latitude. Figure \ref{fig:mba_disc_stats} provides statistical information on how many nights are expected to yield a certain number of discoveries. The conservative size-frequency distribution sees an average of 2000 discoveries per night\footnote{not observed night} during the ten year survey for more than 200 nights. Nights with more objects are rare but do occur. Discovery maxima of roughly 100,000 discoveries per night can occur. A steeper size-frequency distribution of MBAs (population model \gls{B}) would see nights with more than 10 million discoveries. 
 
 Figure \ref{fig:mba_disc_yr} shows the number of expected \gls{MBA} discoveries for each of the ten years of \gls{LSST} operations. If Solar System Processing (\gls{SSP}) starts right away, the majority of objects will be discovered during the first years of the \gls{LSST} survey. Figures \ref{fig:mba_compl} and \ref{fig:mba_disc_yr} demonstrate the power of the \gls{LSST} to quickly distinguish between various hypothesis on the size-frequency distribution in the main belt. 
 %
