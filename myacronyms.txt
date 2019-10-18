@@ -1,0 +1,15 @@
+#Put acronyms in this file which are not found or which have multiple definitions (put the one you want here)
+# ACRONYM: Definition  example
+UNO:Unassociated object
+NDO:non-discoverable object
+MPC:IAU Minor Planet Center
+IAU:International Astronomical Union
+SSO:Solar System Object
+PHA:Potentially Hazardous Asteroid
+TNO:Trans-Neptunian Object
+ADES:Astrometry Data Exchange Standard
+SSP:Solar System Processing
+M:Mega (million)
+k:kilo (thousand)
+SSA:Space Situational Awareness
+

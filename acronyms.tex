@@ -1,0 +1,99 @@
+\addtocounter{table}{-1}
+\begin{longtable}{|p{0.145\textwidth}|p{0.8\textwidth}|}\hline
+\textbf{Acronym} & \textbf{Description}  \\\hline
+
+ADES & Astrometry Data Exchange Standard \\\hline
+AURA & \gls{Association of Universities for Research in Astronomy} \\\hline
+Alert & A packet of information for each source detected with signal-to-noise ratio > 5 in a difference image during \gls{Prompt Processing}, containing measurement and characterization parameters based on the past 12 months of \gls{LSST} observations plus small cutouts of the single-visit, template, and difference images, distributed via the internet \\\hline
+Alert Production & The principal component of \gls{Prompt Processing} that processes and calibrates incoming images, performs \gls{Difference Image Analysis} to identify DIASources and DIAObjects, packages and distributes the resulting Alerts, and runs the \gls{Moving Object Processing System} \\\hline
+Archive & The repository for documents required by the \gls{NSF} to be kept. These include documents related to design and development, construction, integration, test, and operations of the \gls{LSST} observatory system. The archive is maintained using the enterprise content management system \gls{DocuShare}, which is accessible through a link on the project website www.project.lsst.org \\\hline
+Archive \gls{Center} & Part of the \gls{LSST} \gls{Data Management} System, the \gls{LSST} archive center is a data center at \gls{NCSA} that hosts the \gls{LSST} \gls{Archive}, which includes released science data and \gls{metadata}, observatory and engineering data, and supporting software such as the \gls{LSST} \gls{Software Stack} \\\hline
+Association Pipeline & An application that matches detected Sources or DIASources or generated Objects to an existing catalog of Objects, producing a (possibly many-to-many) set of associations and a list of unassociated inputs. Association Pipelines are used in \gls{Prompt Processing} after \gls{DIASource} generation and in the final stages of \gls{Data Release} processing to ensure continuity of \gls{Object} identifiers \\\hline
+Association of Universities for Research in Astronomy &  consortium of \gls{US} institutions and international affiliates that operates world-class astronomical observatories, \gls{AURA} is the legal entity responsible for managing what it calls independent operating Centers, including \gls{LSST}, under respective cooperative agreements with the \gls{National Science Foundation}. \gls{AURA} assumes fiducial responsibility for the funds provided through those cooperative agreements. \gls{AURA} also is the legal owner of the \gls{AURA} Observatory properties in Chile \\\hline
+B & Byte (8 bit) \\\hline
+CCD & \gls{Charge-Coupled Device} \\\hline
+Camera & The \gls{LSST} subsystem responsible for the 3.2-gigapixel \gls{LSST} \gls{camera}, which will take more than 800 panoramic images of the sky every night. \gls{SLAC} leads a consortium of \gls{Department of Energy} laboratories to design and build the \gls{camera} sensors, optics, electronics, cryostat, filters and filter exchange mechanism, and \gls{camera} control system \\\hline
+Center & An entity managed by \gls{AURA} that is responsible for execution of a federally funded project \\\hline
+Charge-Coupled Device & a particular kind of solid-state sensor for detecting optical-band photons. It is composed of a 2-D array of pixels, and one or more read-out amplifiers \\\hline
+Construction & The period during which \gls{LSST} observatory facilities, components, hardware, and software are built, tested, integrated, and commissioned. \gls{Construction} follows design and development and precedes operations. The \gls{LSST} construction phase is funded through the \gls{NSF} \gls{MREFC} account \\\hline
+DCR & \gls{Differential Chromatic Refraction} \\\hline
+DIA & \gls{Difference Image Analysis} \\\hline
+DIAObject & A \gls{DIAObject} is the association of DIASources, by coordinate, that have been detected with signal-to-noise ratio greater than 5 in at least one difference image. It is distinguished from a regular Object in that its brightness varies in time, and from a SSObject in that it is stationary (non-moving) \\\hline
+DIASource & A \gls{DIASource} is a detection with signal-to-noise ratio greater than 5 in a difference image \\\hline
+DM & \gls{Data Management} \\\hline
+DMS & \gls{Data Management} \gls{Subsystem} \\\hline
+DMTN & \gls{DM} Technical Note \\\hline
+DOE & \gls{Department of Energy} \\\hline
+DR & \gls{Data Release} \\\hline
+DRP & \gls{Data Release Production} \\\hline
+Data Management & The \gls{LSST} Subsystem responsible for the \gls{Data Management} System (\gls{DMS}), which will capture, store, catalog, and serve the \gls{LSST} dataset to the scientific community and public. The \gls{DM} team is responsible for the \gls{DMS} architecture, applications, middleware, infrastructure, algorithms, and Observatory Network Design. \gls{DM} is a distributed team working at \gls{LSST} and partner institutions, with the \gls{DM} \gls{Subsystem Manager} located at \gls{LSST} headquarters in Tucson \\\hline
+Data Management \gls{Subsystem} & The \gls{Data Management} \gls{Subsystem} is one of the four subsystems which constitute the \gls{LSST} \gls{Construction} Project. The \gls{Data Management} \gls{Subsystem} is responsible for developing and delivering the \gls{LSST} \gls{Data Management} System to the \gls{LSST} \gls{Operations} Project \\\hline
+Data Management System & The computing infrastructure, middleware, and applications that process, store, and enable information extraction from the \gls{LSST} dataset; the \gls{DMS} will process peta-scale data volume, convert raw images into a faithful representation of the universe, and archive the results in a useful form. The infrastructure layer consists of the computing, storage, networking hardware, and system software. The middleware layer handles distributed processing, data access, user interface, and system operations services. The applications layer includes the data pipelines and the science data archives' products and services \\\hline
+Data Release & The approximately annual reprocessing of all \gls{LSST} data, and the installation of the resulting data products in the \gls{LSST} Data Access Centers, which marks the start of the two-year proprietary period \\\hline
+Data Release Production & An episode of (re)processing all of the accumulated \gls{LSST} images, during which all output \gls{DR} data products are generated. These episodes are planned to occur annually during the \gls{LSST} survey, and the processing will be executed at the \gls{Archive} \gls{Center}. This includes Difference Imaging Analysis, generating deep Coadd Images, \gls{Source} detection and association, creating \gls{Object} and Solar System \gls{Object} catalogs, and related \gls{metadata} \\\hline
+Department of Energy & cabinet department of the United States federal government; the \gls{DOE} has assumed technical and financial responsibility for providing the \gls{LSST} \gls{camera}. The \gls{DOE}'s responsibilities are executed by a collaboration led by \gls{SLAC} National Accelerator Laboratory \\\hline
+Difference Image & Refers to the result formed from the pixel-by-pixel difference of two images of the sky, after warping to the same pixel grid, scaling to the same photometric response, matching to the same \gls{PSF} \gls{shape}, and applying a correction for \gls{Differential Chromatic Refraction}. The pixels in a difference thus formed should be zero (apart from noise) except for sources that are new, or have changed in brightness or position. In the \gls{LSST} context, the difference is generally taken between a visit image and template.  \\\hline
+Difference Image Analysis & The detection and characterization of sources in the \gls{Difference Image} that are above a configurable threshold, done as part of \gls{Alert} Generation Pipeline \\\hline
+Differential Chromatic Refraction & The refraction of incident light by Earth's atmosphere causes the apparent position of objects to be shifted, and the size of this shift depends on both the wavelength of the source and its \gls{airmass} at the time of observation. \gls{DCR} corrections are done as a part of \gls{DIA} \\\hline
+DocuShare & The trade name for the enterprise management software used by \gls{LSST} to archive and manage documents \\\hline
+ESA & European Space Agency \\\hline
+FITS & \gls{Flexible Image Transport System} \\\hline
+Flexible Image Transport System & an international standard in astronomy for storing images, tables, and \gls{metadata} in disk files. See the \gls{IAU} \gls{FITS} Standard for details \\\hline
+GB & Gigabyte \\\hline
+IAU & International Astronomical Union \\\hline
+IVOA & International Virtual-Observatory Alliance \\\hline
+JPL & Jet Propulsion Laboratory (DE ephemerides) \\\hline
+LSST & Large Synoptic Survey Telescope \\\hline
+MB & MegaByte \\\hline
+MOC & Multi Ordered Catalogue \\\hline
+MOPS & \gls{Moving Object Processing System} \\\hline
+MPC & \gls{IAU} Minor Planet \gls{Center} \\\hline
+MREFC & Major Research Equipment and Facility \gls{Construction} \\\hline
+NASA & National Aeronautics and Space Administration \\\hline
+NCSA & National \gls{Center} for Supercomputing Applications \\\hline
+NDO & non-discoverable object \\\hline
+NEO & Near-Earth \gls{Object} \\\hline
+NSF & \gls{National Science Foundation} \\\hline
+National Science Foundation & primary federal agency supporting research in all fields of fundamental science and engineering; \gls{NSF} selects and funds projects through competitive, merit-based review \\\hline
+Object & In \gls{LSST} nomenclature this refers to an \gls{astronomical object}, such as a star, galaxy, or other physical entity. E.g., comets, asteroids are also Objects but typically called a Moving \gls{Object} or a Solar System \gls{Object} (SSObject). One of the \gls{DRP} data products is a table of Objects detected by \gls{LSST} which can be static, or change brightness or position with time \\\hline
+Operations & The 10-year period following construction and commissioning during which the \gls{LSST} Observatory conducts its survey \\\hline
+PHA & Potentially Hazardous Asteroid \\\hline
+PSF & Point Spread Function \\\hline
+Pan-STARRS & Panoramic Survey Telescope and Rapid Response System \\\hline
+Project Manager & The person responsible for exercising leadership and oversight over the entire \gls{LSST} project; he or she controls schedule, budget, and all contingency funds \\\hline
+Prompt Processing & The processing that occurs at the \gls{Archive} \gls{Center} on the nightly stream of raw images coming from the telescope, including Difference Imaging Analysis, \gls{Alert} Production, and the \gls{Moving Object Processing System}. This processing generates Prompt Data Products \\\hline
+SED & \gls{Spectral Energy Distribution} \\\hline
+SLAC & \gls{SLAC} National Accelerator Laboratory (formerly Stanford Linear Accelereator \gls{Center}; \gls{SLAC} is now no longer an acronym) \\\hline
+SSA & Space Situational Awareness \\\hline
+SSO & Solar System \gls{Object} \\\hline
+SSP & Solar System Processing \\\hline
+Science Pipelines & The library of software components and the algorithms and processing pipelines assembled from them that are being developed by \gls{DM} to generate science-ready data products from \gls{LSST} images. The Pipelines may be executed at scale as part of \gls{LSST} Prompt or \gls{Data Release} processing, or pieces of them may be used in a standalone mode or executed through the \gls{LSST} \gls{Science Platform}. The \gls{Science Pipelines} are one component of the \gls{LSST} \gls{Software Stack} \\\hline
+Science Platform & A set of integrated web applications and services deployed at the \gls{LSST} Data Access Centers (DACs) through which the scientific community will access, visualize, and perform next-to-the-data analysis of the \gls{LSST} data products \\\hline
+Software Stack & Often referred to as the \gls{LSST} Stack, or just The Stack, it is the collection of software written by the \gls{LSST} \gls{Data Management} Team to process, generate, and serve \gls{LSST} images, \gls{transient} alerts, and catalogs. The Stack includes the \gls{LSST} \gls{Science Pipelines}, as well as packages upon which the \gls{DM} software depends. It is open source and publicly available \\\hline
+Source & A single detection of an astrophysical object in an image, the characteristics for which are stored in the \gls{Source} Catalog of the \gls{DRP} database. The association of Sources that are non-moving lead to Objects; the association of moving Sources leads to Solar System Objects. (Note that in non-LSST usage "source" is often used for what \gls{LSST} calls an \gls{Object}.) \\\hline
+Spectral Energy Distribution & the radiated energy of an astrophysical object as a function of energy (or wavelength) across the entire spectrum of light \\\hline
+Subsystem & A set of elements comprising a system within the larger \gls{LSST} system that is responsible for a key technical deliverable of the project \\\hline
+Subsystem Manager & responsible manager for an LSST subsystem; he or she exercises authority, within prescribed limits and under scrutiny of the Project Manager, over the relevant subsystem's cost, schedule, and work plans \\\hline
+TNO & Trans-Neptunian \gls{Object} \\\hline
+UNO & Unassociated object \\\hline
+US & United States \\\hline
+Validation & A process of confirming that the delivered system will provide its desired functionality; overall, a validation process includes the evaluation, integration, and test activities carried out at the system level to ensure that the final developed system satisfies the intent and performance of that system in operations \\\hline
+Wide-Fast-Deep & The main survey of the \gls{LSST} to cover at least 18000 square degrees of the southern sky \\\hline
+XMM & X-ray Multi-mirror Mission (\gls{ESA}; officially known as \gls{XMM}-Newton) \\\hline
+airmass & The pathlength of light from an astrophysical source through the Earth's atmosphere. It is given approximately by sec z, where z is the angular distance from the zenith (the point directly overhead, where \gls{airmass} = 1.0) to the source \\\hline
+astronomical object & A star, galaxy, asteroid, or other physical object of astronomical interest. Beware: in non-LSST usage, these are often known as sources \\\hline
+camera & An imaging device mounted at a telescope focal plane, composed of optics, a shutter, a set of filters, and one or more sensors arranged in a focal plane array \\\hline
+declination & Often abbreviated Dec, it is a part of an equatorial coordinate pair that expresses the angular distance (usually expressed in degrees) from the Celestial Equator, measured along great circles that intersect the Equatorial poles. Positions south of the equator are given negative sign \\\hline
+epoch & Sky coordinate reference frame, e.g., J2000. Alternatively refers to a single observation (usually photometric, can be multi-band) of a variable source \\\hline
+flux & Shorthand for radiative \gls{flux}, it is a measure of the transport of radiant energy per unit area per unit time. In astronomy this is usually expressed in cgs units: erg/cm2/s \\\hline
+footprint & See 'source \gls{footprint}', 'instrumental \gls{footprint}', or 'survey \gls{footprint}', `Footprint` is a Python class representing a source \gls{footprint} \\\hline
+forced photometry & A measurement of the photometric properties of a source, or expected source, with one or more parameters held fixed. Most often this means fixing the location of the center of the brightness profile (which may be known or predicted in advance), and measuring other properties such as total brightness, \gls{shape}, and orientation. Forced photometry will be done for all Objects in the \gls{Data Release Production} \\\hline
+instrumental \gls{footprint} & The size and \gls{shape} of a region on the sky that is covered by the field of view of an instrument, or part of an instrument, e.g., the \gls{LSST} \gls{Camera}, or ComCam, or a single \gls{LSST} \gls{CCD}.  Often represented by a geometric region defined in field-angle space \\\hline
+metadata & General term for data about data, e.g., attributes of astronomical objects (e.g. images, sources, astroObjects, etc.) that are characteristics of the objects themselves, and facilitate the organization, preservation, and query of data sets. (E.g., a \gls{FITS} header contains \gls{metadata}) \\\hline
+pipeline & A configured sequence of software tasks (Stages) to process data and generate data products. Example: \gls{Association Pipeline} \\\hline
+precovery & The process of finding, or putting upper limits on, detections of a newly discovered \gls{DIAObject} in previously obtained images, typically using \gls{forced photometry}. \gls{Alert} Packets will contain \gls{precovery} data derived from the past 30 days of images that include the location of a new \gls{DIAObject} \\\hline
+shape & In reference to a \gls{Source} or Object, the \gls{shape} is a functional characterization of its spatial intensity distribution, and the integral of the \gls{shape} is the \gls{flux}. Shape characterizations are a data product in the \gls{DIASource}, \gls{DIAObject}, \gls{Source}, and Object catalogs \\\hline
+source \gls{footprint} & A set of pixels that are determined to be part of a \gls{Source} (or \gls{DIASource}). It is implemented as a list of spans. A span contains coordinates of a stripe of pixels: row (y) given span belongs to, and a section of a column (xStart, xEnd). In \gls{DM} code, the term 'footprint' refers to a 'source \gls{footprint}' \\\hline
+survey \gls{footprint} & The portion of the sky covered by data from an astronomical survey, e.g., the main wide-fast-deep \gls{LSST} 10-year survey, the \gls{LSST} deep drilling fields, or the Science \gls{Validation} data taken during commissioning.  Sometimes represented by Boolean maps or other summary statistics in an all-sky representation, e.g., the \gls{IVOA} \gls{MOC} standard \\\hline
+transient & A \gls{transient} source is one that has been detected on a difference image, but has not been associated with either an \gls{astronomical object} or a solar system body \\\hline
+\end{longtable}
