@@ -63,6 +63,7 @@
 \newglossaryentry{Project Manager} {name={Project Manager}, description={The person responsible for exercising leadership and oversight over the entire LSST project; he or she controls schedule, budget, and all contingency funds}}
 \newglossaryentry{Prompt Processing} {name={Prompt Processing}, description={The processing that occurs at the Archive Center on the nightly stream of raw images coming from the telescope, including Difference Imaging Analysis, Alert Production, and the Moving Object Processing System. This processing generates Prompt Data Products}}
 \newacronym{SED} {SED} {\gls{Spectral Energy Distribution}}
+\newglossaryentry{SI} {name={SI}, description={Syst\`eme International (International System of units defined by ISO)}}
 \newglossaryentry{SLAC} {name={SLAC}, description={SLAC National Accelerator Laboratory (formerly Stanford Linear Accelereator Center; SLAC is now no longer an acronym)}}
 \newacronym{SSA} {SSA} {Space Situational Awareness}
 \newacronym{SSO} {SSO} {Solar System Object}

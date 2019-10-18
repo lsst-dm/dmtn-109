@@ -1,10 +1,10 @@
 \section{Summary} \label{sec:abstract}
 
 The \gls{LSST} is expected to discover millions of Solar System objects (SSOs) as reported in Table \ref{tab:table1}.
-Roughly 2bn observations of SSOs can be expected after ten years of the \gls{LSST} survey with up to 100,000 new discoveries per night. Most objects are going to be discovered during the first years of \gls{LSST} observations. Main Belt Asteroids (MBAs) are the largest contributors to both, \gls{SSO} discoveries and operations.
+Roughly 2bn observations of SSOs can be expected after ten years of the \gls{LSST} survey with up to 100,000 new discoveries per night. Most objects are going to be discovered during the first years of \gls{LSST} operations. Main Belt Asteroids (MBAs) are the largest contributors to both, \gls{SSO} discoveries and operations.
 The corresponding nightly data volumes to be delivered to the Minor Planet \gls{Center} are on the order of hundreds of MBs and only rarely exceed a \gls{GB}.
-Even with near perfect linking and detection algorithms driving the Solar System Processing (\gls{SSP}) pipelines not all \gls{SSO} observations can be attributed to known sources or new discoveries.
-The fraction of \gls{LSST} \gls{SSO} observations that fall into that category decreases over time, but is unlikely to fall below 2.5\% (50M) even in the best case scenario of finding every discoverable asteroid at the first opportunity. Roughly half of those observations belong to objects that are not discoverable at all given the current discovery strategy of ``three nighters", i.e. 2 pairs of observations over three nights in a 15-30 day window. Those may trigger false alerts in a roughly 50deg wide \gls{declination} band around the ecliptic. A delayed start in processing Solar System observations, caused by a lack of templates in the first year, for instance, would not significantly affect Main Belt Asteroid discovery as long as data is collected and computational resources similar to the yearly data reprocessing can be made available at a later time. In contrast, a delay in \gls{SSP} would lead to a larger number of unassociated observations potentially affecting \gls{LSST} alerts. It would also make timely follow-up observations of near-Earth asteroids and interstellar objects impossible. 
+Even with near perfect linking and detection algorithms driving the Solar System Processing (\gls{SSP}) pipelines, not all \gls{SSO} observations can be attributed to known sources or new discoveries.
+The fraction of \gls{LSST} \gls{SSO} observations that fall into that category decreases over time, but is unlikely to fall below 2.5\% (50M) even in the best case scenario of finding every discoverable asteroid at the first opportunity. Roughly half of those observations belong to objects that are not discoverable at all given the current discovery strategy of ``three nighters", i.e. two pairs of observations over three nights in a 15-30 day window. Those may trigger false alerts in a roughly 50deg wide \gls{declination} band around the ecliptic. A delayed start in processing Solar System observations, caused by a lack of templates in the first year, for instance, would not significantly affect Main Belt Asteroid discovery as long as data is collected and computational resources similar to the yearly data reprocessing can be made available at a later time. In contrast, a delay in \gls{SSP} would lead to a larger number of unassociated observations potentially affecting \gls{LSST} alerts. It would also make timely follow-up observations of near-Earth asteroids and interstellar objects impossible. 
 
 \begin{table}[tb!]
 \begin{center}
@@ -66,7 +66,7 @@ have a great interest in estimates regarding the predicted data \gls{flux} direc
 %  $^1$)Expected at the end of LSST's ten years of operations.}
 %\end{table}
 As some progress has been made in this respect, both in scientific literature and in the \gls{LSST} project, it is the aim of this \gls{DMTN} to summarize and, where necessary, to provide updated \gls{LSST} \gls{SSO} observation and discovery rates as well as their uncertainties. This information is intended to inform internal and external services affected by \gls{SSO} discoveries.
-The remainder of this \gls{DMTN} is structured as follows: Section \ref{sec:lsstss} briefly describes the \gls{LSST} survey and the simulation setup. Section \ref{sec:neo} provides a summary of previous work as well as a brief update on near-Earth asteroid discovery with the \gls{LSST}. Section \ref{sec:mba} discusses \gls{LSST} capabilities to discover Main Belt Asteroids that constitute the main source of \gls{LSST} \gls{SSO} observations. In section \ref{sec:delay} the impact of delayed \gls{LSST} operations and Solar System processing on discovery requirements is studied. Section \ref{sec:noise} assesses in how far unattributed \gls{SSO} observations could contribute noise to \gls{LSST} data. As MBA observations dominate \gls{SSO} observations section \ref{sec:data} discusses likely data rates that \gls{LSST} has to submit to the \gls{IAU} Minor Planet \gls{Center} (\gls{MPC}) on a nightly basis. Section \ref{sec:other}  looks at other \gls{SSO} populations and section \ref{sec:conclusions} concludes this report.
+The remainder of this \gls{DMTN} is structured as follows: Section \ref{sec:lsstss} briefly describes the \gls{LSST} survey and the simulation setup. Section \ref{sec:neo} provides a summary of previous work as well as a brief update on near-Earth asteroid discovery with the \gls{LSST}. Section \ref{sec:mba} discusses \gls{LSST} capabilities to discover Main Belt Asteroids that constitute the main source of \gls{LSST} \gls{SSO} observations. In section \ref{sec:delay} the impact of delayed \gls{LSST} operations and Solar System processing on discovery requirements is studied. Section \ref{sec:noise} assesses how much noise unattributed \gls{SSO} observations could contribute to \gls{LSST} data. As \gls{MBA} observations dominate \gls{SSO} observations section \ref{sec:data} discusses likely data rates that \gls{LSST} has to submit to the \gls{IAU} Minor Planet \gls{Center} (\gls{MPC}) on a nightly basis. Section \ref{sec:other}  looks at other \gls{SSO} populations and section \ref{sec:conclusions} concludes this report.
 
 %According to the MPC, ingesting additional information on known objects can be performed with relatively little effort. 
 %Confirming and providing preliminary orbits for potential discoveries, on the other hand, requires more resources.
@@ -80,26 +80,26 @@ The proposed observation strategy for the \gls{LSST} survey used in this work is
 \begin{tabular}{c}
 \includegraphics[width=1\linewidth]{figs/baseline2018a.png}
 \end{tabular}
-\caption{LSST survey simulation "baseline2018a". The left column shows Intra (top) and inter-night gaps (bottom) between returns to the same pointing. In the right column maximum (top) and median (bottom) five sigma depths are shown.}
+\caption{LSST survey simulation "baseline2018a". The left column shows intra- (top) and inter-night gaps (bottom) between \gls{LSST} returns to the same pointing. In the right column maximum (top) and median (bottom) five sigma depths are shown.}
 \label{fig:gaps}       % Give a unique label
 \end{figure}
 %
-During the \gls{Wide-Fast-Deep} (WDF) survey \gls{LSST} is expected to reach median five signal depths around 23.5mag with median inter and intra-night gaps of 1.5 days and 20 mins, respectively. Such a cadence facilitates the construction of nightly tracklets, successive observations of
+During the \gls{Wide-Fast-Deep} (WDF) survey \gls{LSST} is expected to reach median five signal depths around \SI{23.5}{mag} with median inter and intra-night gaps of 1.5 days and 20 mins, respectively. Such a cadence facilitates the construction of nightly tracklets, successive observations of
 moving objects spanning a short arc. Tracklets of individual objects can then be linked over several nights resulting in the discovery of SSOs.
 Two types of survey simulation software frameworks were used to generate and validate \gls{LSST} \gls{SSO} discovery statistics, namely
 \begin{itemize}
 \item \href{https://epyc.astro.washington.edu/~lynnej/sims_movingObjects/lsst.sims.movingObjects.html}{LSST Sims\_movingObjects (SIMS\_MO)}
 \item \href{https://github.com/eggls6/openobs}{Open Observation Simulator (OPENOBS)}
 \end{itemize}
-The former is a high fidelity simulator that includes N-body numerical orbit propagation, the actual \gls{LSST} \gls{camera} model, as well as color information of asteroids. SIMS\_MO is capable of performing accurate observation simulations for up to several 100k of SSOs. Although that constitutes only a fraction of the true MBA population, information on expected survey completeness statistics can be extracted through sampling of individual orbits over a grid of absolute magnitudes. 
-OPENOBS is capable of performing survey simulations on the entire expected MBA population (around 100M objects) albeit with a lower fidelity. Instead of N-body propagation unperturbed heliocentric Keplerian orbits of SSOs are assumed. The \gls{LSST} \gls{camera} \gls{footprint} is simulated, but the exact geometry including chip gaps has not been taken into account in OPENOBS simulations. Instead, the fill factor of the \gls{camera} system as calculated in \citet{veres2017high} was used to statistically filter observations. Spectral energy distributions (SEDs) of asteroids are assumed to be flat in OPENOBS simulations, while S- and C-type asteroid \gls{SED}s are used in SIMS\_MO (Figure \ref{fig:sed}). The magnitude cutoff in our simulation was chosen to be H=25 mag corresponding to asteroid diameters between 19m-60m depending on object albedo (0.5-0.05).
+The former is a high fidelity simulator that includes N-body numerical orbit propagation, the actual \gls{LSST} \gls{camera} model, as well as color information of asteroids. SIMS\_MO is capable of performing accurate observation simulations for up to several 100k of SSOs. Although that constitutes only a fraction of the true \gls{MBA} population, information on expected survey completeness statistics can be extracted through sampling of individual orbits over a grid of absolute magnitudes. 
+OPENOBS is capable of performing survey simulations on the entire expected \gls{MBA} population (around 100M objects) albeit with a lower fidelity. Instead of N-body propagation unperturbed heliocentric Keplerian orbits of SSOs are assumed. The \gls{LSST} \gls{camera} \gls{footprint} is simulated, but the exact geometry including chip gaps has not been taken into account in OPENOBS simulations. Instead, the fill factor of the \gls{camera} system as calculated in \citet{veres2017high} was used to statistically filter observations. Spectral energy distributions (SEDs) of asteroids are assumed to be flat in OPENOBS simulations, while S- and C-type asteroid \gls{SED}s are used in SIMS\_MO (Figure \ref{fig:sed}). The magnitude cutoff in our simulation was chosen to be H=25mag corresponding to asteroid diameters between 19m-60m depending on object albedo (0.5-0.05).
 \begin{figure}[tb!]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{figs/5sig_filter.png}\\
 \includegraphics[width=0.5\textwidth]{figs/5sig_filter_S.png}\\
 \includegraphics[width=0.5\textwidth]{figs/5sig_filter_C.png}
 \end{center}
-\caption{A comparison of \gls{LSST} depths per filter for a flat \gls{SED} (top), an \gls{SED} corrected for S-type asteroids (center) and C-type asteroids (bottom), respectively.}
+\caption{A comparison of \gls{LSST} depths per filter for a flat \gls{SED} (top), an \gls{SED} corrected for S-type asteroids (center) and C-type asteroids (bottom), respectively. The x-axis is given in magnitudes and the y axis }
 \label{fig:sed}       % Give a unique label
 \end{figure}
 %Combining results from SSO population studies and LSST's expected performance we suggest that the  
@@ -114,7 +114,7 @@ OPENOBS is capable of performing survey simulations on the entire expected MBA p
 % camera orientation is includeded
 \clearpage
 \section{Near-Earth Asteroids}\label{sec:neo}
-Substantial efforts have been undertaken to assess the potential of the \gls{LSST} of discovering near-Earth asteroids \citep[e.g.][]{ivezic2006lsst,jones2015asteroid,grav2016modeling,veres2017near,veres2017high,jones2018large,ivezic2019lsst}. The current consensus is that \gls{LSST} is capable of achieving around 60\% integral completeness NEOs with absolute magnitude brighter than 22, roughly 140m in size and larger. Together with other existing \gls{NEO} surveys that number can be increased to 73\% with the current \gls{LSST} survey strategy. The prospects for discovering Potentially Hazardous Asteroids (PHAs) are even better, with a predicted 81\% completeness at the end of the nominal \gls{LSST} survey \citep{ivezic2019lsst}. The completeness fraction is largely independent of \gls{NEO} population models such as \citep[S3M,][]{s3m} and \citet{granvik2018neos}, see Figure \ref{fig:neo_compl}. In contrast, the actual number of discovered objects varies considerably as shown in Figure \ref{fig:neo_count}. \gls{LSST} discoveries for asteroids brighter than H=25mags range from 50k to 100k over the 10yrs of the \gls{LSST} survey, which corresponds to 2.5 to 5 times the number of currently known NEOs (Figure \ref{fig:neo_current}).
+Substantial efforts have been undertaken to assess the potential of the \gls{LSST} for discovering near-Earth asteroids \citep[e.g.][]{ivezic2006lsst,jones2015asteroid,grav2016modeling,veres2017near,veres2017high,jones2018large,ivezic2019lsst}. The current consensus is that \gls{LSST} is capable of achieving around 60\% integral completeness NEOs with absolute magnitude brighter than 22, roughly 140m in size and larger. Together with other existing \gls{NEO} surveys that number can be increased to 73\% with the current \gls{LSST} survey strategy. The prospects for discovering Potentially Hazardous Asteroids (PHAs) are even better, with a predicted 81\% completeness at the end of the nominal \gls{LSST} survey \citep{ivezic2019lsst}. The completeness fraction is largely independent of \gls{NEO} population models such as \citep[S3M,][]{s3m} and \citet{granvik2018neos}, see Figure \ref{fig:neo_compl}. In contrast, the actual number of discovered objects varies considerably as shown in Figure \ref{fig:neo_count}. \gls{LSST} discoveries for asteroids brighter than H=25mag range from 50k to 100k over the 10yrs of the \gls{LSST} survey, which corresponds to 2.5 to 5 times the number of currently known NEOs (Figure \ref{fig:neo_current}).
 Uncertainties in the \gls{NEO} population model are the most significant contributors to the uncertainty in the number of \gls{NEO} discoveries. All \gls{NEO} simulations have been performed with SIMS\_MO.
 \begin{figure}[tb!]
 \begin{center}
@@ -144,35 +144,35 @@ The prediction curves represent the cumulative number of discovered NEOs as a fu
 \clearpage
 
 \section{Main Belt Asteroids} \label{sec:mba}
-The vast majority of SSOs accessible to the \gls{LSST} populate the Main-Belt (\gls{MB}) between Mars and Jupiter \citep{LSSTscibook2009}. Estimates on \gls{SSO} discovery and observation statistics presented in this document are, therefore, be based on simulations of Main-Belt asteroid (MBA) observations with the \gls{LSST}. 
+The vast majority of SSOs accessible to the \gls{LSST} populate the Main-Belt (\gls{MB}) between Mars and Jupiter \citep{LSSTscibook2009}. Estimates on \gls{SSO} discovery and observation statistics presented in this document are, therefore, based on simulations of Main-Belt asteroid (\gls{MBA}) observations with the \gls{LSST}. 
 In order to quantify the number of potential \gls{LSST} discoveries, we adopt a simple model for the size-frequency and orbit distribution of MBAs of the form
 \begin{equation}
- N(H)=\beta\;10^{\;\alpha H}
+ N(\text{H})=\beta\;10^{\;\alpha \text{H}}
  \label{eq:lsw}
 \end{equation}
 where $N$ is the number of MBAs, $H$ the absolute magnitude, and $\alpha$ and $\beta$ determine the slope and the anchor value of the log-linear fit, respectively.
-The parameters in equation (\ref{eq:lsw}) were derived from the current MBA population using actual data of the main belt supplied by the \gls{MPC}. 
-Assuming the bight main belt population is essentially complete up to $H=14.5$mag, we can fit lower and upper bounds on the size-frequency distribution that we extrapolate to fainter objects. The corresponding results are presented in Figure \ref{fig:mba_pop} as well as in Table \ref{tab:mbapop}.
-In order to guarantee that the slope and anchor parameters for the MBA population are not influenced by the specific choice of the bin-size in $H$ we derived the underlying distribution $n(H)$ using kernel density estimation where
+The parameters in equation (\ref{eq:lsw}) were derived from the current \gls{MBA} population using actual data of the main belt supplied by the \gls{MPC}. 
+Assuming the bright main belt population is essentially complete up to $H=14.5$mag, we can fit lower and upper bounds on the size-frequency distribution that we extrapolate to fainter objects. The corresponding results are presented in Figure \ref{fig:mba_pop} as well as in Table \ref{tab:mbapop}.
+In order to guarantee that the slope and anchor parameters for the \gls{MBA} population are not influenced by the specific choice of the bin-size in $H$ we derived the underlying distribution $n(H)$ using kernel density estimation where
 \begin{equation}
- n\;(H)=\frac{1}{I\,b} \sum_{i=1}^{I} K\left(\frac{H-H_i}{b}\right),
+ n\;(\text{H})=\frac{1}{I\,b} \sum_{i=1}^{I} K\left(\frac{\text{H}-\text{H}_i}{b}\right),
  \label{eggl:eq:kernel}
 \end{equation}
-where $K$ is the (Gaussian) kernel and $b$ a smoothing parameter, respectively. The resulting slopes are compatible with \citet{jedicke2002} who find local slopes between $0.24<\alpha<0.58$ for MBAs with $H>10$, as well as with size-frequency distributions from Trans-Neptunian Objects (TNOs), where $\alpha\approx0.66$ \citep{bernstein2004}.
+where $K$ is the (Gaussian) kernel and $b$ a smoothing parameter, respectively. The resulting slopes are compatible with \citet{jedicke2002} who find local slopes between $0.24<\alpha<0.58$ for MBAs with H$>10$mag, as well as with size-frequency distributions from Trans-Neptunian Objects (TNOs), where $\alpha\approx0.66$ \citep{bernstein2004}.
 Orbital elements of synthetic MBAs are sampled from the joint distribution of orbital elements of the current main belt. We assume that the size-frequency and orbital element distribution are essentially uncorrelated. While, strictly speaking, this is not the case for asteroids that belong to families, a similar approach was used to create the S3M \citep{s3m}, a synthetic Solar System model for \gls{Pan-STARRS}.
-In contrast to the "bracketing" approach adopted in this work via estimating upper and lower bounds to the size-frequency distribution in the main belt, the MBA population in the S3M is based on work by \citet{jedicke2002}. A comparison between the here adopted model and \citet{jedicke2002} used in S3M can be seen in Figure \ref{fig:mba_pop}.
+In contrast to the "bracketing" approach adopted in this work via estimating upper and lower bounds to the size-frequency distribution in the main belt, the \gls{MBA} population in the S3M is based on work by \citet{jedicke2002}. A comparison between the here adopted model and \citet{jedicke2002} used in S3M can be seen in Figure \ref{fig:mba_pop}.
 \begin{table}[t!]
 \begin{center}
 \begin{tabular}{cllr}
 \hline
-model & $\alpha$ & $\beta$ & $N_{tot}(H \le 25)$ \\
+model & $\alpha$ & $\beta$ & $N_{tot}$(H $\le$ 25mag) \\
 \hline
 A & 0.3 &  2.29 & 104 $\times 10^{6}$ \\
 B & 0.56 &4.43 $\times 10^{-4}$ & 34.5$\times 10^{9}$\\
 \hline
 \end{tabular}
 \end{center}
-\caption{Main Belt Asteroid (MBA) population models used in this work. The parameters $\alpha$ and $\beta$ are input to equation (\ref{eq:lsw}). $N_{tot}$ is the estimate for the total asteroid population with $H\le 25$ mag. }
+\caption{Main Belt Asteroid (\gls{MBA}) population models used in this work. The parameters $\alpha$ and $\beta$ are input to equation (\ref{eq:lsw}). $N_{tot}$ is the estimate for the total asteroid population with $H\le 25$mag. }
 \label{tab:mbapop}
 \end{table}
 %%%
@@ -186,7 +186,7 @@ B & 0.56 &4.43 $\times 10^{-4}$ & 34.5$\times 10^{9}$\\
 \end{figure} 
 %
 The current strategy of the \gls{LSST} Solar System Processing is to send only those observations of SSOs to the \gls{MPC} that have a high likelihood of being either associated to know objects or new discoveries. 
-In order to minimize false positives in potential asteroid discoveries, observations of new objects are only submitted, if they are detected least twice per night on three distinct nights (so-called "three nighters"). The three nights do not have to be consecutive. Detections can be spread over a window of 15-30 nights. Assuming a linking efficiency close to 100\%, such "three-nighters" can be turned into preliminary orbits that have a high likelihood of belonging to newly discovered objects. 
+In order to minimize false positives in potential asteroid discoveries, observations of new objects are only submitted, if they are detected at least twice per night on three distinct nights (so-called "three nighters"). The three nights do not have to be consecutive. Detections can be spread over a window of 15-30 nights. Assuming a linking efficiency close to 100\%, such "three-nighters" can be turned into preliminary orbits that have a high likelihood of belonging to newly discovered objects. 
 The expected completeness as a function of absolute magnitude (a proxy for the size of objects) for MBAs is shown in Figure \ref{fig:mba_compl} after 6 months, 1 year, 2 years and after 10 years of \gls{LSST} operations.
 \begin{figure}[b!]
 %\includegraphics[scale=.65]{pics/ptype_gf_a1.png}
@@ -199,7 +199,7 @@ The expected completeness as a function of absolute magnitude (a proxy for the s
 %
 The graph shows that after two years of survey more than 90\% of kilometer sized MBAs will have been discovered.
 By the nominal end of the \gls{LSST} survey we know essentially all MBAs with diameters of half a kilometer and larger.
-The total number of discovered MBAs as a function of absolute magnitude in presented in Figure \ref{fig:mba_disc}. Results for the two  size-frequency distributions probed are 
+The total number of discovered MBAs as a function of absolute magnitude is presented in Figure \ref{fig:mba_disc}. Results for the two  size-frequency distributions probed are 
 shown for both software packages, SIMS\_MO and OPENOBS. Formal errors for SIMS\_MO discoveries are based on the sample size selected from the assumed size frequency distribution.  
 A comparison of Figures \ref{fig:mba_compl} and \ref{fig:mba_disc} shows that results for SIMS\_MO and OPENOBS are very similar where \gls{LSST} is expected to be essentially complete (H$\approx19$ mag). For smaller and fainter objects discovery rates differ slightly leading to a discrepancy of roughly 10\%, which is negligible compared to the uncertainties in the expected number of MBAs. 
 %
@@ -211,9 +211,9 @@ A comparison of Figures \ref{fig:mba_compl} and \ref{fig:mba_disc} shows that re
 \label{fig:mba_disc}       % Give a unique label
 \end{figure}
 %
-Figure \ref{fig:mba_disc_stats} shows the expected number of \gls{LSST} MBA discoveries per night as predicted by OPENOBS simulations. The number of discovered objects ranges from a few per night to 100 000 discoveries depending on the momentary cadence and ecliptic latitude. Figure \ref{fig:mba_disc_stats} provides statistical information on how many nights are expected to yield a certain number of discoveries. The conservative size-frequency distribution sees an average of 2000 discoveries per night\footnote{not observed night} during the ten year survey for more than 200 nights. Nights with more objects are rare but do occur. Discovery maxima of roughly 100 000 discoveries per night can occur. A steeper size-frequency distribution of MBAs (population model \gls{B}) would see nights with more than 10 million discoveries. 
+Figure \ref{fig:mba_disc_stats} shows the expected number of \gls{LSST} \gls{MBA} discoveries per night as predicted by OPENOBS simulations. The number of discovered objects ranges from a few per night to 100 000 discoveries depending on the momentary cadence and ecliptic latitude. Figure \ref{fig:mba_disc_stats} provides statistical information on how many nights are expected to yield a certain number of discoveries. The conservative size-frequency distribution sees an average of 2000 discoveries per night\footnote{not observed night} during the ten year survey for more than 200 nights. Nights with more objects are rare but do occur. Discovery maxima of roughly 100 000 discoveries per night can occur. A steeper size-frequency distribution of MBAs (population model \gls{B}) would see nights with more than 10 million discoveries. 
 
-Figure \ref{fig:mba_disc_yr} shows the number of expected MBA discoveries for each of the ten years of \gls{LSST} operations. If Solar System Processing (\gls{SSP}) stars right away, the majority of objects will be discovered during the first years of the \gls{LSST} survey. Figures \ref{fig:mba_compl} and \ref{fig:mba_disc_yr} demonstrate the power of the \gls{LSST} to quickly distinguish between various hypothesis on the size-frequency distribution in the main belt. 
+Figure \ref{fig:mba_disc_yr} shows the number of expected \gls{MBA} discoveries for each of the ten years of \gls{LSST} operations. If Solar System Processing (\gls{SSP}) starts right away, the majority of objects will be discovered during the first years of the \gls{LSST} survey. Figures \ref{fig:mba_compl} and \ref{fig:mba_disc_yr} demonstrate the power of the \gls{LSST} to quickly distinguish between various hypothesis on the size-frequency distribution in the main belt. 
 %
 \begin{figure}[tb!]
 \begin{center}
@@ -222,7 +222,7 @@ Figure \ref{fig:mba_disc_yr} shows the number of expected MBA discoveries for ea
 \includegraphics[width=0.50\linewidth]{figs/disc_stat.png}
 \end{tabular}
 \end{center}
-\caption{Left: \gls{LSST} Main Belt Asteroid (MBA) discoveries per observed night for population model A. Right: Number of nights with a certain discovery yield versus number of discoveries per night for two different MBA size-frequency distributions.}
+\caption{Left: \gls{LSST} Main Belt Asteroid (\gls{MBA}) discoveries per observed night for population model A. Right: Number of nights with a certain discovery yield versus number of discoveries per night for two different \gls{MBA} size-frequency distributions.}
 \label{fig:mba_disc_stats}       % Give a unique label
 \end{figure}
 
@@ -233,7 +233,7 @@ Figure \ref{fig:mba_disc_yr} shows the number of expected MBA discoveries for ea
 \includegraphics[width=0.5\linewidth]{figs/disc_per_yr2.png}
 \end{tabular}
 \end{center}
-\caption{LSST Main Belt Asteroid (MBA) discoveries per year on a linear (left) and logarithmic scale (right) assuming 100\% linking efficiency. The left panel compares yields for early and late discovery scenarios. The right panel shows discovery yields for population models A (green) and \gls{B} (red) in an early discovery scenario.}
+\caption{LSST Main Belt Asteroid (\gls{MBA}) discoveries per year on a linear (left) and logarithmic scale (right) assuming 100\% linking efficiency. The left panel compares yields for early and late discovery scenarios. The right panel shows discovery yields for population models A (green) and \gls{B} (red) in an early discovery scenario.}
 \label{fig:mba_disc_yr}       % Give a unique label
 \end{figure}
 %
@@ -242,7 +242,7 @@ The on-sky distribution of observations of discoverable MBAs is shown in Figure 
 \begin{center}
 \includegraphics[width=0.70\linewidth]{figs/mba_obs_hpmap.png}
 \end{center}
-\caption{On-sky (ICRF) distribution of observations per square degree of MBAs (population model A, 14.5 $\le$ H [mag] $\le$ 25) discoverable with the \gls{LSST}.The dark spots correspond to the \gls{LSST} deep drilling fields from right to left: ELAIS S1, \gls{XMM}-LSS, Extended Chandra, Deep Field-South and COSMOS.}
+\caption{On-sky (ICRF) distribution of observations per square degree of MBAs (population model A, 14.5 $\le$ H [mag] $\le$ 25) discoverable with the \gls{LSST}. The dark spots suggesting a locally larger number of observations correspond to the \gls{LSST} deep drilling fields from right to left: ELAIS S1, \gls{XMM}-LSS, Extended Chandra, Deep Field-South and COSMOS.}
 \label{fig:mba_obs_sky}       % Give a unique label
 \end{figure}
 %
@@ -263,7 +263,7 @@ Many asteroids are observed frequently enough so that they can be discovered lat
 \begin{center}
 \includegraphics[width=0.70\linewidth]{figs/lost4.png}
 \end{center}
-\caption{Losses in MBA discoveries due to delayed operations of the \gls{LSST} (assuming no extension) for population model A.}
+\caption{Losses in \gls{MBA} discoveries due to delayed operations of the \gls{LSST} (assuming no extension) for population model A.}
 \label{fig:lost}       % Give a unique label
 \end{figure}
 Even in a worst case scenario where \gls{LSST} operations are significantly delayed, the majority of asteroids could still be discovered during the last years of the nominal period of operations (Figures \ref{fig:mba_disc_yr} and \ref{fig:lost}).\footnote{Note, that this is not necessarily true for near-Earth asteroids, since their discovery function is not as simple a function of the synodic period as it is for MBAs.} 
@@ -341,8 +341,8 @@ Figure \ref{fig:ufc} shows that that fraction is around 15\% at the beginning of
 Precovery algorithms can reduce the number of unassociated observations by roughly 50\%, but only a posteriori. 
 At the time of observation, unassociated observations may still trigger unwanted \gls{LSST} alerts. 
 Figure \ref{fig:obs_stats} suggests that most nights tend to have a relatively low number of unassociated observations, typically between 1k-10k (Table \ref{tab:obs_stats}). Similarly, one can expect between 100 and 10k observations from non-discoverable objects per night. Only a hand-full of nights may prove to be ``noisier".
-Figure \ref{fig:ndo_h} shows the absolute magnitude distribution of detected, discovered and non-discovered objects for the MBA population model A.
-One can see that the \gls{LSST} MBA survey is bound to discover practically all objects down to absolute magnitude $H=19.5$mag. The 50\% completeness mark is $H=21.5$mag.
+Figure \ref{fig:ndo_h} shows the absolute magnitude distribution of detected, discovered and non-discovered objects for the \gls{MBA} population model A.
+One can see that the \gls{LSST} \gls{MBA} survey is bound to discover practically all objects down to absolute magnitude $H=19.5$mag. The 50\% completeness mark is $H=21.5$mag.
 Absolute magnitudes for non-discoverable objects range from H=19mag to H=25mag.
 The on-sky distribution of observations of non-discoverable objects is shown in Figure \ref{fig:ndo_obs_sky}. The distribution broadly resembles the one in Figure \ref{fig:ndo_obs_sky}. Over ten years of operations, one would expect fewer than 4000 observations per square degree from non-discoverable MBAs near the ecliptic with an all-sky median value of 76 per night (\ref{tab:obs_stats}).   
 %
@@ -359,7 +359,7 @@ maximum & 2,976,668 & 2,134,030 & 683,392 & 656,687 & 356,857\\
 \hline\hline\\
 \end{tabular}
 \end{center}
-\caption{Nightly statistics for all \gls{LSST} MBA observations, currently known object observations, unassociated observations and observations of
+\caption{Nightly statistics for all \gls{LSST} \gls{MBA} observations, currently known object observations, unassociated observations and observations of
 non-discoverable objects.}
 \label{tab:obs_stats}
 \end{table}
@@ -389,7 +389,7 @@ percentage   & 100\%  & 31.2\% & 2.4\% & 0.4\% & 1.1\% & 0.2\% \\\hline
 \hline
 \end{tabular}
 \end{center}
-\caption{Main Belt Asteroid (MBA) observations at the end of the \gls{LSST} survey. Observations of bright, already known objects are in the column $H<14.5$mag.
+\caption{Main Belt Asteroid (\gls{MBA}) observations at the end of the \gls{LSST} survey. Observations of bright, already known objects are in the column $H<14.5$mag.
 Unassociated observations (\gls{UNO}) can partly be linked to discovered objects via \gls{precovery}. NDOs are observations of non-discoverable objects. The number of observations that are part of tracklets (TR) is contrasted with single observations per night (SNGL). Dashes indicate the first and last chance observations are the same.\label{tab:mbaobs}}
 \end{table}
 
@@ -406,7 +406,7 @@ Unassociated observations (\gls{UNO}) can partly be linked to discovered objects
 
 \section{Expected \gls{MPC} Data Rates}\label{sec:data}
 Based on observation statistics presented in the previous section we can estimate nightly data rates for submitting \gls{SSO} observations to the \gls{MPC}. The new Astrometry Data Exchange Standard (\gls{ADES}) submission format\footnote{\url{https://www.minorplanetcenter.net/iau/info/ADES.html}} that will be adopted by the time \gls{LSST} goes on line permits a more detailed description of optical observations of SSOs. Observation covariance information can be provided, for instance. As such, each observation should have an equivalent size of roughly 500bytes when submitted to the \gls{MPC}. Figure \ref{fig:data} shows the corresponding, expected nightly data volumes. Submissions will typically be on the order of several hundred MBs per night. \gls{GB} sized submissions are fairly rare occurring on roughly 50 nights during the ten years of \gls{LSST} operations. Given the fairly steep size-frequency distribution in population model A that has been used in this assessment, observations of new discoveries will dominate \gls{MPC} submissions despite the fact that known objects are brighter and tend to have more observations per object. Table \ref{tab:data_stats} contains the corresponding statistics. It is currently not planned to submit all observations to the \gls{MPC}. Only observations
-that can be linked to known objects and those that can be confidently attributed new discoveries are to be delivered. 
+that can be linked to known objects and those that can be confidently attributed to new discoveries are to be delivered. 
 
 
 \begin{figure}[tb!]
@@ -431,13 +431,13 @@ maximum & 1,419 & 1,018 & 326 \\
 \hline\hline\\
 \end{tabular}
 \end{center}
-\caption{Nightly data volumes for the submission of \gls{LSST} MBA observations, discoveries and currently known object observations to the Minor Planet \gls{Center} in MegaBytes.}
+\caption{Nightly data volumes for the submission of \gls{LSST} \gls{MBA} observations, discoveries and currently known object observations to the Minor Planet \gls{Center} in MegaBytes.}
 \label{tab:data_stats}
 \end{table}
 
 \section{Other Solar System \gls{Object} populations}\label{sec:other}
 Similar to the inner Solar System, size frequency distributions for SSOs in the outer solar system are not well understood. 
-For Trojans and Trans-Neptunian Objects (TNOs) only cumulative completeness estimates are available this point. Those are presented in Figure \ref{fig:allcum}.
+For Trojans and Trans-Neptunian Objects (TNOs) only cumulative completeness estimates are available at this point. Those are presented in Figure \ref{fig:allcum}.
 Until updated figures become available we suggest to use the previous predictions of 40k Trojan and 280k \gls{TNO} discoveries from \citet{jones2015asteroid}.
 Interstellar objects and comets have not yet been investigated in detail.
 
@@ -460,7 +460,7 @@ The study at hand shows that
 \item Observations and discoveries of Main belt asteroids (MBAs) are bound to dominate \gls{LSST} \gls{SSO} data submitted to the \gls{IAU} Minor Planet \gls{Center}.
 \item The number of MBAs discovered over 10 years of \gls{LSST} likely ranges between 4.8M and 5.4M and is unlikely to be higher than 220M. 
 \item The majority of discoveries are going to be made within the first 2 to 3 years of the \gls{LSST} survey.
-\item The number of MBA discoveries per night can be up to 100 000 with an average of 2000 for the most likely size-frequency distribution (population model A). Even in the unlikely case of a \gls{TNO}-like size-frequency distribution in the Main Belt we expect no more than 3 million discoveries per night on a handful of nights during the survey.
+\item The number of \gls{MBA} discoveries per night can be up to 100 000 with an average of 2000 for the most likely size-frequency distribution (population model A). Even in the unlikely case of a \gls{TNO}-like size-frequency distribution in the Main Belt we expect no more than 3 million discoveries per night on a handful of nights during the survey.
 \item The vast majority of asteroids observed with \gls{LSST} have two and more observations per night.  
 \item The "three nighter" paradigm for detecting SSOs leads to a non-negligible fraction of unattributable observations, since not all observations that can be connected into tracklets occur on three separate nights. 
 \item After ten years of \gls{LSST} operations observations of non-discoverable objects are likely to be on the order of several thousands per square degree concentrated in a band around the ecliptic. This excludes TNOs that are too slow to be identified as moving objects. 
